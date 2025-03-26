@@ -1,1 +1,0 @@
-Hi this is git file which is newly created and it will be pushed to github , later it will be deleted from Local repository and then Gihubb repository.
