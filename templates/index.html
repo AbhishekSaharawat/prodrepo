@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content ="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Daily Activity Blog</title>
+        <link rel="stylesheet" href="/static/CSS/style.css"  />
+    </head>
+    <body>
+      <main>
+          <!----<img class="profile" src="Abhishek_Saharawat.jpg" alt="Abhishek's Profile Pic" /> -->
+        <div> 
+         <form class="form" method="POST">
+            <h1>Daily Activity-BLOG</h1>
+            <p class="form_group">
+                <label class="form_label" for="name">Name:</label>
+                <input class="input" type="text" id="name" name="name"  />
+            </p>   
+            <p class ="form_group">
+                <label class="form_label" for="email">Email:</label>
+                <input class="input" type="text" id="email" name="email" />
+            </p>
+            <p class="form_group" > 
+                <label class="form_label" for="password">Password:</label>
+                <input class="input" type="text" id ="password" name="password" />
+            </p>     
+            
+            <p class="blog_input" > 
+                <label for="writes" class="text_label">Blog Contents :</label>
+                <textarea class="blog_content" type="text" id="content" name="content" placeholder="Thought Of the Day"></textarea>    
+            </p>
+
+            
+            <button class="button" type ="submit" >Signup:</button>                              
+                                
+            
+            {% for element in elements%}
+            <p>The Blog Content entered since start of this Blog Page are listed below:
+               Content:{{ element[3]}}                  
+            </p>
+            {% endfor %}
+           
+         
+         </form>
+        </div>        
+
+      <main>
+    </body>
+</html>
